@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.telegram.CollapsibleToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:minHeight="?actionBarSize"
+    app:layoutDescription="@xml/scene"
+    app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed">
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/icon"
+        android:layout_width="64dp"
+        android:foreground="@drawable/expanded_grad"
+        android:layout_height="64dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/chance_large" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The chance"
+        android:textColor="#ffffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Public channel"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="697dp" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/upButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="?homeAsUpIndicator"
+        android:tint="#ffffffff" />
+
+
+</com.example.telegram.CollapsibleToolbar>
